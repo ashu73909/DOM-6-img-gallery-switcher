@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(243, 239, 239);
+    color: #111827;
+    position: relative;
+    z-index: -1;
+}
+/*for dark mode button toggle*/
+body.dark-mode{
+    background-color: #111827;
+    color: white;
+}
+.container{
+    padding: 50px;
+    border: 1px solid rgb(101, 101, 101);
+    border-radius: 8px;
+}
+.element-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.element-cont h2{
+    padding-bottom: 10px;
+}
+.Img-button{
+    padding: 10px 40px;
+    border: none;
+    outline: none;
+    background-color:rgb(174, 170, 170);
+    border-radius: 4px;
+    text-shadow: 0cqmax;
+    font-weight: 500px;
+    cursor: pointer;
+}
+#prevBtn{
+    padding: 10px;
+    max-width: 100px;
+    outline: none;
+    background-color: rgb(219, 220, 219);
+    border-radius: 4px;
+    text-shadow: 0cqmax;
+    font-weight: 500px;
+    cursor: pointer;
+}
+#nextBtn{
+    padding: 10px;
+    max-width: 100px;
+    outline: none;
+    background-color: rgb(219, 220, 219);
+    border-radius: 4px;
+    text-shadow: 0cqmax;
+    font-weight: 500px;
+    cursor: pointer;
+}
+
+#image-container{
+    width: 100%;
+    margin: 5px auto;
+    /* border: none;
+    border-radius: 8px;
+    background-color:rgb(174, 170, 170); */
+    margin-top:40px ;
+    padding:20px ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;/*1 2 3 1 5 6 6 4  6 4 6
+                    after flex wrap
+                    1 2 3 1 5 6 6
+                    4 6 4 6*/
+    flex-shrink: 0;/*never deform or squish*/
+    gap: 5px;
+}
+.enhance{
+    border: none;
+    border-radius: 8px;
+    background-color:rgb(174, 170, 170);
+}
+#modal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+    background-color: rgba(69, 69, 69, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    outline: none;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding:20px;
+    appearance: none;
+    padding: 30px;
+    border-radius: 8px;
+    outline: none;
+}
+.overlay{
+    width: 60%;
+    position: absolute;
+    z-index: 2;
+    padding: 50px;
+}
