@@ -19,6 +19,8 @@ btnREF.addEventListener("click",async ()=>{
     photo=data.photos
     console.log(photo);//[{..},{...},{..},.....] array of objects("photos":[{}])
 
+    imgContREF.innerHTML="";
+
     data.photos.forEach((item,index)=>{ //for(const [index,item] of data.photos.entries()) /for(const item of data.photos)is similar to data.photos.forEach((item,index)=>{} => para2 in forEach shows index of current element and similary in for loop [index,item]
         let image=document.createElement("img");
         image.src=item.src.medium;//image.src=> <img src="">
