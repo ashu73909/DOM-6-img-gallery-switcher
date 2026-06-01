@@ -1,6 +1,6 @@
 const btnREF=document.getElementById("img-btn");
 const imgContREF=document.getElementById("image-container");
-const zoomImgcont=document.getElementById("modal");
+const zoomImgcont=document.getElementById("modal");//article
 const zoomImg=document.getElementById("modal-image");
 const nextBtn=document.getElementById("nextBtn");
 const prevBtn=document.getElementById("prevBtn");
