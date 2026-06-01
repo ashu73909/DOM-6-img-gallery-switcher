@@ -43,8 +43,10 @@ nextBtn.addEventListener("click",()=>{
     zoomImg.src=photo[currentIndex].src.large;
 });
 prevBtn.addEventListener("click",()=>{
-    currentIndex--;
-    zoomImg.src=photo[currentIndex].src.large;
+    if(currentIndex>0){
+        currentIndex--;
+        zoomImg.src=photo[currentIndex].src.large;
+    }
 });
 
 window.addEventListener("click",(e)=>{
